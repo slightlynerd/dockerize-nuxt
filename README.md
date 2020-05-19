@@ -1,22 +1,15 @@
-# multiple-domains
+# Dockerized Nuxt App
 
-> My flawless Nuxt.js project
+> Run nuxt app with docker
 
-## Build Setup
+## Run in development
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```bash
+docker-compose up -d --build
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Run in production
+
+```bash
+docker-compose -f docker-compose.prod.yml up -d --build
+```
